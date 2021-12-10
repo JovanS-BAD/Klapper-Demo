@@ -49,7 +49,7 @@
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
-							<h1 class="text-upper">Klapper Demo page</h1>
+							<h1 id="klapper-widget-element" class="text-upper">Klapper Demo page</h1>
 							<p class="white">A fully Responsive, Clean Design landing Page.<br />
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -272,5 +272,21 @@
 			})
 		</script>
 	</body>
+	
+	<script type="text/javascript">
+        (function () {
+            window.klWidgetPosition = 9;
+            window.klWidgetSize = "m"
+            window.klWidgetSiteKey ="dceGrBK5GvcYxSH7ks4hDb6mDJ9w8Zef74PoOxiU61b300bf134e4";
+            window.klWidgetColor ="#FBB03B";
+            window.globalScriptOrigin = 'https://cdn.klapper.io';
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = window.globalScriptOrigin + '/klapper-widget/klapperstg.js';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
 	
 </html>
